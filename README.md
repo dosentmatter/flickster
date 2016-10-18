@@ -2,7 +2,7 @@
 
 **Flickster** shows the latest movies currently playing in theaters. The app utilizes the Movie Database API to display images and basic information about these movies to the user.
 
-Time spent: **5** hours spent in total
+Time spent: **9** hours spent in total
 
 ## User Stories
 
@@ -16,9 +16,9 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* [ ] User can **pull-to-refresh** popular stream to get the latest movies.
-* [ ] Display a nice default [placeholder graphic](http://guides.codepath.com/android/Displaying-Images-with-the-Picasso-Library#configuring-picasso) for each image during loading.
-* [ ] Improved the user interface through styling and coloring.
+* [x] User can **pull-to-refresh** popular stream to get the latest movies.
+* [x] Display a nice default [placeholder graphic](http://guides.codepath.com/android/Displaying-Images-with-the-Picasso-Library#configuring-picasso) for each image during loading.
+* [x] Improved the user interface through styling and coloring.
 
 The following **bonus** features are implemented:
 
@@ -40,8 +40,8 @@ The following **additional** features are implemented:
 
 Here are walkthroughs of implemented user stories:
 
-<img src='http://i.imgur.com/3K1OQCA.gif' title='Video Walkthrough Portrait' width='' alt='Video Walkthrough Portrait'/>
-<img src='http://i.imgur.com/d6wWZtM.gif' title='Video Walkthrough Landscape' width='' alt='Video Walkthrough Landscape'/>
+<img src='http://i.imgur.com/wT6ja4o.gif' title='Video Walkthrough Portrait' width='' alt='Video Walkthrough Portrait'/>
+<img src='http://i.imgur.com/HS6hPsL.gif' title='Video Walkthrough Landscape' width='' alt='Video Walkthrough Landscape'/>
 
 GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
