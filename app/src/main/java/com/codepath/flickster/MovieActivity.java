@@ -29,10 +29,6 @@ public class MovieActivity extends AppCompatActivity {
     private ArrayList<Movie> movies;
     private MovieArrayAdapter movieAdapter;
 
-    private final String MOVIE_DB_URL
-        = "https://api.themoviedb.org/3/movie/now_playing?api_key="
-        + "a07e22bc18f5cb106bfe4cc1f83ad8ed";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +46,10 @@ public class MovieActivity extends AppCompatActivity {
     }
 
     public void populateMovies() {
+        final String MOVIE_DB_URL
+            = "https://api.themoviedb.org/3/movie/now_playing?api_key="
+            + "a07e22bc18f5cb106bfe4cc1f83ad8ed";
+
         AsyncHttpClient client = new AsyncHttpClient();
 
         client.get(MOVIE_DB_URL,
