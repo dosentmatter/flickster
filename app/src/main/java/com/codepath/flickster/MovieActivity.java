@@ -53,33 +53,33 @@ public class MovieActivity extends AppCompatActivity {
         AsyncHttpClient client = new AsyncHttpClient();
 
         client.get(MOVIE_DB_URL,
-                new JsonHttpResponseHandler() {
-                    @Override
-                    public void onSuccess(int statusCode, Header[] headers,
-                                          JSONObject response) {
-                        JSONArray movieJsonResults = null;
+                   new JsonHttpResponseHandler() {
+                       @Override
+                       public void onSuccess(int statusCode, Header[] headers,
+                                             JSONObject response) {
+                           JSONArray movieJsonResults = null;
 
-                        try {
-                            movieJsonResults
-                                    = response.getJSONArray("results");
-                            ArrayList<Movie> movieResults
-                                    = Movie.fromJSONArray(movieJsonResults);
-                            movies.clear();
-                            movies.addAll(movieResults);
-                            movieAdapter.notifyDataSetChanged();
-                        } catch (JSONException e) {
-                            Log.e(LOG_TAG, e.getMessage());
-                        }
-                    }
+                           try {
+                               movieJsonResults
+                                   = response.getJSONArray("results");
+                               ArrayList<Movie> movieResults
+                                   = Movie.fromJSONArray(movieJsonResults);
+                               movies.clear();
+                               movies.addAll(movieResults);
+                               movieAdapter.notifyDataSetChanged();
+                           } catch (JSONException e) {
+                               Log.e(LOG_TAG, e.getMessage());
+                           }
+                       }
 
-                    @Override
-                    public void onFailure(int statusCode, Header[] headers,
-                                          String responseString,
-                                          Throwable throwable) {
-                        super.onFailure(statusCode, headers, responseString,
-                                        throwable);
-                    }
-                });
+                       @Override
+                       public void onFailure(int statusCode, Header[] headers,
+                                             String responseString,
+                                             Throwable throwable) {
+                           super.onFailure(statusCode, headers, responseString,
+                                           throwable);
+                       }
+                   });
     }
 
     private void setupSwipeContainer() {
@@ -94,6 +94,6 @@ public class MovieActivity extends AppCompatActivity {
         swipeContainer.setOnRefreshListener(swipeContainerRefreshListener);
 
         swipeContainer
-            .setColorSchemeResources(android.R.color.holo_blue_bright);
+        .setColorSchemeResources(android.R.color.holo_blue_bright);
     }
 }

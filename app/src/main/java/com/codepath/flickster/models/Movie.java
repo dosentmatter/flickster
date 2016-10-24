@@ -15,7 +15,7 @@ public class Movie {
     private static final String POSTER_PATH_PREFIX
         = "https://image.tmdb.org/t/p/w342";
     private static final String BACKDROP_PATH_PREFIX
-            = "https://image.tmdb.org/t/p/w780";
+        = "https://image.tmdb.org/t/p/w780";
 
     private String posterPath;
     private String backdropPath;

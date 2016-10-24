@@ -64,7 +64,7 @@ public class MovieArrayAdapter extends ArrayAdapter<Movie> {
             imagePath = movie.getBackdropPath();
         }
         Picasso.with(getContext()).load(imagePath)
-            .placeholder(R.mipmap.ic_launcher).into(viewHolder.ivImage);
+               .placeholder(R.mipmap.ic_launcher).into(viewHolder.ivImage);
 
         viewHolder.tvTitle.setText(movie.getOriginalTitle());
         viewHolder.tvOverview.setText(movie.getOverview());
